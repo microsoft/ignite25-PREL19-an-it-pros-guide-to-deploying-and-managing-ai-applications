@@ -407,6 +407,10 @@ FodyWeavers.xsd
 # Local History for Visual Studio Code
 .history/
 
+# MkDocs site files
+site/
+.cache/
+
 # Built Visual Studio Code Extensions
 *.vsix
 
