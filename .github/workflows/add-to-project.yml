@@ -1,0 +1,32 @@
+name: "Add new issues to Ignite GH Project"
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add to project
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: ${{ secrets.GH_PROJECT_URL }}
+          github-token: ${{ secrets.ADD_TO_PROJECT }}
+
+  label_issues:
+    name: Label issues
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add label to issue
+        run: |
+          gh issue edit ${{ github.event.issue.number }} --add-label "${{ secrets.ISSUE_LABEL }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
