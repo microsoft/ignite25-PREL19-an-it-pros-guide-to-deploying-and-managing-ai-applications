@@ -56,6 +56,12 @@ az vmss identity assign --resource-group $VMSSresourceGroup --name $VMSSnodepool
 #Update VMSS instances
 az vmss update-instances -g $VMSSresourceGroup -n $VMSSnodepoolName --instance-ids *
 
+# Get AKS credentials
+az aks get-credentials --resource-group $resourceGroup --name $aksName
+
+#Set the custom label to the workload node pool 
+kubectl get nodes -l agentpool=$nodePoolName -o name | % { kubectl label $_ workload=true }
+
 # Create CosmosDB account (SQL API)
 az cosmosdb create --name $accountName --resource-group $resourceGroup --locations regionName=$location failoverPriority=0 isZoneRedundant=False --kind GlobalDocumentDB
 
