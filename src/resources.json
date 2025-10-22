@@ -1,0 +1,88 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.ContainerRegistry/registries/acr55813199",
+      "name": "acr55813199",
+      "type": "Microsoft.ContainerRegistry/registries",
+      "sku": {
+        "name": "Basic",
+        "tier": "Basic"
+      },
+      "location": "westus3",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/predaycluster-identity",
+      "name": "predaycluster-identity",
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "location": "westus3",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.ContainerService/managedClusters/predaycluster",
+      "name": "predaycluster",
+      "type": "Microsoft.ContainerService/managedClusters",
+      "sku": {
+        "name": "Base",
+        "tier": "Free"
+      },
+      "location": "westus3"
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb-55813199",
+      "name": "cosmosdb-55813199",
+      "type": "Microsoft.DocumentDB/databaseAccounts",
+      "kind": "GlobalDocumentDB",
+      "location": "westus3",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.ServiceBus/namespaces/sbpreday-55813199",
+      "name": "sbpreday-55813199",
+      "type": "Microsoft.ServiceBus/namespaces",
+      "sku": {
+        "name": "Standard",
+        "tier": "Standard"
+      },
+      "location": "westus3",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.KeyVault/vaults/kvpreday-55813199",
+      "name": "kvpreday-55813199",
+      "type": "Microsoft.KeyVault/vaults",
+      "location": "westus3",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.CognitiveServices/accounts/preday-55813199",
+      "name": "preday-55813199",
+      "type": "Microsoft.CognitiveServices/accounts",
+      "sku": {
+        "name": "S0"
+      },
+      "kind": "OpenAI",
+      "location": "westus"
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.OperationalInsights/workspaces/logpreday55813199",
+      "name": "logpreday55813199",
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "location": "westus3"
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.Network/privateEndpoints/55813199",
+      "name": "55813199",
+      "type": "Microsoft.Network/privateEndpoints",
+      "location": "westus3",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/35e6f3d9-2478-46ce-8995-259d4093f51d/resourceGroups/PreDayRG/providers/Microsoft.Network/networkInterfaces/55813199-nic",
+      "name": "55813199-nic",
+      "type": "Microsoft.Network/networkInterfaces",
+      "location": "westus3",
+      "tags": {}
+    }
+  ]
+}
